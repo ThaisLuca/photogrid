@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif; 
+  background: #f5f4f4;
+}
+
+/* Header */
+header {
+	display: flex;
+	justify-content: center;
+	margin: 40px auto;
+	max-width: 992px;
+}
+
+/* Header - Foto */
+header .profile_photo {
+	margin: 20px;
+}
+
+header .profile_photo img {
+	border-radius: 50%;
+	width: 100%;
+}
+
+/* Header - Sobre */
+header .about {
+	margin: 10px;
+}
+
+header .about h1 {
+	font-size: 28px;
+}
+
+header .about p {
+	font-size: 16px;
+}
+
+/* Container */
+.container {
+	max-width: 992px;
+	margin: 0 auto;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.item {
+	box-shadow: -2px 2px 10px 0px rgba(#444, 0.4);
+	cursor: pointer;
+	flex-direction: column;
+	padding: 15px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+	transform: scale(1.05);
+}
+
+.item .item_details {
+	background-color: #fff;
+	padding: 15px;
+}
+
+.item .item_details span {
+	font-size: 13px;
+}
+
+.item .item_details img {
+	margin-right: 10px;
+	vertical-align: bottom;
+}
+
+
+/* Footer */
+footer p {
+	text-align: center;
+}
+
+@media (min-width: 768px){
+
+	/* Header - Foto */
+	header {
+		justify-content: start;
+	}
+
+	header .profile_photo {
+		margin: 0 60px 0 30px;
+	}
+
+	/*Header - Sobre*/
+	header .about {
+		margin: 0;
+	}
+
+	header .about h1 {
+		font-size: 28px;
+	}
+
+	header .about h1 {
+		font-size: 32px;
+	}
+}
